@@ -1,0 +1,12 @@
+{% extends 'employe/base.html' %}
+
+{% block content %}
+<form action="" method="post" class="space-y-4">
+    {%csrf_token %}
+    {{ form.nom }}
+    {{ form.email }}
+    {{ form.poste }}
+    {{ form.salaire }}
+    <button type="submit" class="btn btn-primary mt-4">Enregistrer</button>
+</form>
+{% endblock %}
