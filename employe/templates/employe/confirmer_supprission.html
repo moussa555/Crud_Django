@@ -2,7 +2,7 @@
 
 {% block content %}
 <form action="" method="post" class="space-y-4 flex flex-col">
-    <span class="text-center">Estes vous sûr de vouloir supprimer <strong>{{ employe.nom }}</strong> </span>
+    <span class="text-center">Etes vous sûr de vouloir supprimer <strong>{{ employe.nom }}</strong> </span>
     {%csrf_token %}
     <button type="submit" class="btn btn-error mt-4">Supprimer</button>
     <a href="{% url 'liste_employes' %}" class="btn btn-primary w-full">Annuler</a>
